@@ -8,7 +8,6 @@ import time
 import datetime
 
 import pytz
-from decouple import config
 from telethon import TelegramClient, functions
 from telethon.sessions import StringSession
 
