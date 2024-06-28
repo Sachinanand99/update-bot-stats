@@ -137,7 +137,7 @@ async def check_bots():
     status_message += f"**Last checked at** `{current_time.strftime('%H:%M:%S - %d %B %Y')}` [ __{TIME_ZONE}__ ]"
 
     # add auto check message
-    status_message += f"\n\n**This message will be updated every 20 minutes.**"
+    status_message += f"\n\n**This message will be updated every 2 hours.**"
 
     # edit the message in the channel
     try:
@@ -152,6 +152,6 @@ while True:
     try:
         client.loop.run_until_complete(check_bots())
         print("sleeping for 20 mins")
-        time.sleep(20*60)
+        time.sleep(60*60*2)
     except KeyboardInterrupt:
         print("Program stopped")
