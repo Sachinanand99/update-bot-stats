@@ -19,13 +19,13 @@ log = logging.getLogger("BotStatus")
 
 # fetching variales from env
 try:
-    APP_ID = int(os.environ.get("APP_ID","22518295"))
-    API_HASH = os.environ.get("API_HASH","4ec4789e7af4207606a3d087923899f1")
-    SESSION = os.environ.get("SESSION","1BVtsOI0Bu6iXKt2VK7nWqgbf4R9ngvLP9Dxv6c64PX8DwDAkyA6TbzSYyJPeAQa_sNgVxilKjI9HrqskwgyMigeHXDzHniafoQ1hWTNpgvu22_MsvzQxduaBzSNsMOL5Gu1vuMGWNGtUgvSsLEbxgpd65Yn2hlplVRXOWLbXXSpX0BKE5BvSQGPciVN3REhpBRN1MwLDnrqHprrvDSEGI0J25AkDPiq4qV7mNt2UVHga0RWtMNRXqw9JpR1FMFNeigsH149j6PLU_NGNxvYEBMwkx9f9XpyHHi3KfWkGMJAbLwPgegSRyorS8roXLTTfNDdtDMXHriKKxMUXyRKeXstgsGmRL-8=")
-    LIST_BOTS = os.environ.get("LIST_BOTS","terasnake5454bot teraboxedmirror5454bot autorename5454bot metadatasaver5454bot Chizuru_Mizuhara5454Bot missmai69bot")
-    CHANNEL_ID = int(os.environ.get("CHANNEL_ID","-1002195458445"))
-    MESSAGE_ID = int(os.environ.get("MESSAGE_ID","7"))
-    CHANNEL_NAME = os.environ.get("CHANNEL_NAME","@savorybotzz")
+    APP_ID = int(os.environ.get("APP_ID",""))
+    API_HASH = os.environ.get("API_HASH","")
+    SESSION = os.environ.get("SESSION","")
+    LIST_BOTS = os.environ.get("LIST_BOTS","")
+    CHANNEL_ID = int(os.environ.get("CHANNEL_ID",""))
+    MESSAGE_ID = int(os.environ.get("MESSAGE_ID",""))
+    CHANNEL_NAME = os.environ.get("CHANNEL_NAME","")
     TIME_ZONE = os.environ.get("TIME_ZONE", "Asia/Kolkata")
 except BaseException as ex:
     log.info(ex)
